@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background-image: url('C:/Estudio/JavaScript/San Valentin/imagenes/fondoDeLaPagina.jpg');
+    background-image: url('../imagenes/fondoDeLaPagina.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
