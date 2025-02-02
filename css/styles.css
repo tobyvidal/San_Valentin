@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background-image: url('../imagenes/fondoDeLaPagina.jpg');
+    background-image: url('C:/Estudio/JavaScript/San Valentin/imagenes/fondoDeLaPagina.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -65,7 +65,7 @@ nav a:hover {
     display: none;
     position: absolute;
     background-color: rgba(30, 144, 255, 0.9);
-    min-width: 160px;
+    min-width: 100px;
     border-radius: 5px;
     z-index: 1;
     margin-top: 10px;
@@ -75,6 +75,7 @@ nav a:hover {
     color: white;
     padding: 8px 16px;
     font-size: 14px;
+    text-align: left;
     text-decoration: none;
     display: block;
 }
@@ -150,13 +151,10 @@ footer {
 
     /* Menú de navegación más compacto */
     nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        border-radius: 0;
-        z-index: 1000; /* Asegura que quede sobre otros elementos */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
     }
 
     nav a {
@@ -199,5 +197,53 @@ footer {
 
     .mensaje {
         font-size: 16px;
+    }
+}
+/* Sección de imágenes y texto alternado */
+.sobre-ti-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Alternancia entre imagen izquierda y derecha */
+.sobre-ti-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.sobre-ti-section img {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-ti-texto {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .sobre-ti-section {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .sobre-ti-texto {
+        width: 90%;
+    }
+
+    .sobre-ti-section img {
+        width: 80%;
     }
 }
