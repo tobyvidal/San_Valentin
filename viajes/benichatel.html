@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos</title>
+    <link rel="stylesheet" href="../css/styleInstantes.css">
+</head>
+<body>
+    <header>Nuestro primer viaje!</header>
+    <nav>
+        <a href="../Index.html">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)">Viajes</a>
+            <div class="dropdown-content">
+                <a href="benichatel.html">Benichatel</a>
+            </div>
+        </div>
+        <a href="../momentos.html">Instantes</a>
+        <a href="../sobre_ti.html">Sobre Ti</a>
+    </nav>
+    <main>
+        <p>Dicen que la vida son instantes, te dejo unos cuantos mios para que veas cuando empecé a vivir.</p>
+        
+        <!-- Feed de imágenes -->
+        <div class="feed">
+            
+            <div class="foto" onclick="openModalViajes('12_fto', 'Dia de playa y luego cenita :)')">
+                <img src="../imagenesBenichatel/12_fto.png" alt="Momento 12">
+            </div>
+            <div class="foto" onclick="openModalViajes('13_fto', 'Perdidos en Jávea pero juntos.')">
+                <img src="../imagenesBenichatel/13_fto.png" alt="Momento 13">
+            </div>
+            <div class="foto" onclick="openModalViajes('14_fto', 'Te comoo')">
+                <img src="../imagenesBenichatel/14_fto.png" alt="Momento 14">
+            </div>
+            <div class="foto" onclick="openModalViajes('15_fto', 'Fotónn')">
+                <img src="../imagenesBenichatel/15_fto.png" alt="Momento 15">
+            </div>
+            <div class="foto" onclick="openModalViajes('16_fto', 'Nada que agregar.')">
+                <img src="../imagenesBenichatel/16_fto.png" alt="Momento 16">
+            </div>
+            
+            <div class="foto" onclick="openModalViajes('20_fto', 'Preparandote para reventarme el coche...')">
+                <img src="../imagenesBenichatel/20_fto.png" alt="Momento 20">
+            </div>
+            
+            <div class="foto" onclick="openModalViajes('22_fto', 'Más besitos.')">
+                <img src="../imagenesBenichatel/22_fto.png" alt="Momento 22">
+            </div>
+            
+            <div class="foto" onclick="openModalViajes('24_fto', 'Los 2 ❤️')">
+                <img src="../imagenesBenichatel/24_fto.png" alt="Momento 24">
+            </div>
+            
+          
+            
+            </div>
+            
+            <!-- Más imágenes se pueden agregar siguiendo el mismo patrón -->
+        </div>
+
+        <!-- Modal para ver la descripción -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">×</span>
+                <img id="modal-img" src="" alt="Imagen Modal">
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../js/jsInstantes.js"></script>
+</body>
+</html>
