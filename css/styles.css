@@ -9,7 +9,7 @@ body {
     background-image: url('../imagenes/fondoDeLaPagina.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: Arial, sans-serif;
     color: #2F4F4F;
     text-align: center;
