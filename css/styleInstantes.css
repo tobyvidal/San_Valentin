@@ -87,14 +87,7 @@ nav a:hover {
 }
 
 /* GRID DE IMÁGENES */
-.feed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
+
 
 .foto {
     position: relative;
@@ -243,3 +236,65 @@ video#beachVideo {
     object-fit: cover;
     z-index: -1; /* Coloca el video detrás del contenido */
 }
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta minmax según el tamaño deseado */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño máximo de cada carrusel */
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover img {
+    transform: scale(1.1);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
