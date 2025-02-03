@@ -6,7 +6,15 @@ html, body {
 }
 
 body {
-    
+    background: linear-gradient(to bottom, 
+    #87CEEB 0%,    /* Cielo azul claro */
+    #1E90FF 35%,   /* Azul más intenso del mar */
+    #4682B4 50%,   /* Transición de agua profunda */
+    #F4A460 80%,   /* Arena más oscura */
+    #FFDAB9 100%   /* Arena clara */
+);
+    height: 100vh;
+    margin: 0;
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
