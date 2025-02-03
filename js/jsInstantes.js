@@ -60,3 +60,7 @@ function updateCarousel() {
 
 // Asegura que el primer slide esté visible al inicio
 updateCarousel();
+
+function irAViaje1(){
+    window.location.href = "viajes/benichatel.html";
+}
