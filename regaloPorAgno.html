@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Regalo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .carta {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    z-index: 1000; /* Asegura que quede sobre otros elementos */
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #FFA07A;
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠</a>
+        <a href="viajes.html">🛫</a>
+        <a href="momentos.html">🎞️</a>
+        <a href="sobre_ti.html">👸</a>
+    </nav>
+    <div class="carta">
+        <h1>🎁 Carta Regalo 🎁</h1>
+        <p>Te invito a <strong>Metropolitan Romareda</strong> a un masaje para 2 personas que incluye:</p>
+        <ul>
+            <li>Masaje craneofacial, cuello y escote (30 min)</li>
+            <li>Acceso al circuito spa de relajación (45 min)</li>
+        </ul>
+        <p>¡Disfrútalo mucho! 💖</p>
+    </div>
+</body>
+</html>
